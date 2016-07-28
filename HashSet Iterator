@@ -1,0 +1,49 @@
+package Session8;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetExample {
+	
+	public static void main(String[] args){
+		
+		
+		HashSet<String> hash1 = new HashSet<>();
+		
+		
+		hash1.add("William");
+		hash1.add("John");
+		hash1.add("Andy");
+		hash1.add("Bob");
+		hash1.add("Marley");
+		hash1.add("Justin");
+		hash1.add("Uno");
+		
+		
+		Iterator<String> itr = hash1.iterator();
+		
+		System.out.println("Iteration through collection:");
+		
+		while(itr.hasNext()){
+			
+			System.out.println(itr.next());
+			
+			
+		}
+		
+	}
+
+}
+
+
+/* Output
+
+Iteration through collection:
+Marley
+Bob
+Uno
+John
+William
+Justin
+Andy
+*/
